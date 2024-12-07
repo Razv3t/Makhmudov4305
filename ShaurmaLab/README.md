@@ -1,6 +1,8 @@
 # Лабораторная работа на тему TCP/UDP
 
 ## Описание проекта
+![](https://github.com/Razv3t/Makhmudov4305/blob/master/ShaurmaLab/images.jpg)
+
 
 Данный проект представляет собой реализацию клиент-серверного приложения с использованием протоколов TCP и UDP. Основные функции включают управление заказами пиццы, такие как добавление, обновление статуса и удаление заказов.
 
@@ -130,12 +132,12 @@ public async Task<bool> OrderPizza(string pizzaType)
 }
 ```
 ```C#
-if (key.Key == ConsoleKey.D2) 
-{
-    Console.Write("Enter pizza type: ");
-    var pizzaType = Console.ReadLine() ?? string.Empty;
-    await messageApi.OrderPizza(pizzaType);
-    Console.WriteLine($"Pizza order sent: {pizzaType}");
-}
+    if (key.Key == ConsoleKey.D2) 
+    {
+        Console.Write("Написать пожелание на новый год: ");
+        var pizzaType = Console.ReadLine() ?? string.Empty;
+        await messageApi.OrderPizza(pizzaType);
+        Console.WriteLine($"Пожелание: {pizzaType}");
+    }
 ```
 ### Работа программы можно посмотреть в папке Images.
