@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "gx8qRlTYawY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\amirk\\OneDrive\\Рабочий стол\\shovket\\ThirdLabHangFire\\DistributedQueue\\DistributedQueue.Scheduler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amirk\\.nuget\\packages\\hangfire.core\\1.8.2\\hangfire.core.1.8.2.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\hangfire.redis.stackexchange\\1.9.0\\hangfire.redis.stackexchange.1.9.0.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\stackexchange.redis\\2.6.111\\stackexchange.redis.2.6.111.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\amirk\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
