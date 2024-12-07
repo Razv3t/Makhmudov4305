@@ -1,5 +1,46 @@
+# Что это вообще такое
+Hangfire — это библиотека для . net (core), позволяющая асинхронно выполнять некоторый код по принципу "fire and forget". Примером такого кода может быть отправка E-Mail, обработка видео, синхронизация с другой системой и т. д.
 # Какие были сделаны изменения
-https://github.com/sorrymorning/SecondLabForASVT/blob/master/DistributedQueue.Worker/GregoryLeibnizGetPIJob.cs  
-Код выводит что любит есть каждый из тасков
-## Вывод программы
-![Иллюстрация к проекту](https://github.com/sorrymorning/SecondLabForASVT/blob/master/exampleOfWorking.png)
+Была переписана кнопка Р, 
+```C#
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace DistributedQueue.Common
+{
+    internal class GregoryLeibnizGetPIJob : IComputePiJob
+    {
+        public Task ComputePyAsync(string name, int iterrations, CancellationToken token)
+        {
+
+            var startTime = DateTime.Now;
+
+            var iterrationsToCheck = 1000000;
+            var iterrationCurrent = 0;
+            string[] strings = {
+                    "Кебаб",
+                    "Самса",
+                    "Шаурма",
+                    "Закрытая пицца",
+                    "Мужчин",
+                    "Хинкал",
+                    "Снюс",
+                    "Рамен",
+                    "Шурпа",
+                    "Детей"
+                };
+            for (int i = 0; i < iterrations; i++)
+            {
+                Console.WriteLine($"{DateTime.Now}: Compute task: {name} Он думает, что шовкет любит -> {strings[i%10]}");
+                Thread.Sleep(1000);
+            }
+
+
+            Console.WriteLine($"Nane potoka: {name}, Iterrations: {iterrations}");
+
+            return Task.CompletedTask;
+        }
+    }
+}
+```
